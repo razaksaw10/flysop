@@ -1,145 +1,88 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Bibliothèque</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #007bff;
-        }
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-user {
-            background-color: #28a745;
-            color: white;
-        }
-        .btn-admin {
-            background-color: #dc3545;
-            color: white;
-        }
-        .btn-back {
-            background-color: #6c757d;
-            color: white;
-            margin-top: 20px;
-        }
-        .hidden {
-            display: none;
-        }
-        .card {
-            background: #ffffff;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .retard {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+   
+    <title>Document</title>
 </head>
 <body>
 
-    <!-- PAGE DE CONNEXION -->
-    <div id="login-page" class="container">
-        <h1>Bibliothèque</h1>
-        <p>Choisissez votre accès :</p>
-        <button class="btn-user" onclick="showUserPage()">Utilisateur</button>
-        <button class="btn-admin" onclick="showAdminPage()">Administrateur</button>
-    </div>
+    <button class="subscribe-button">
+        SUBSCRIBE 
+      </button>
+      
+      <button class="join-button">
+        JOIN
+      </button>
+      
+      <button class="tweet-button">
+        Tweet
+      </button>
 
-    <!-- PAGE UTILISATEUR -->
-    <div id="user-page" class="container hidden">
-        <h1>Mes Livres</h1>
-        <div class="card">
-            <strong>📖 Les Misérables</strong><br>
-            <small>Emprunté le : 10 Février 2025</small><br>
-            <small>Date de retour : 20 Février 2025</small>
-        </div>
-        <div class="card">
-            <strong>📖 Le Petit Prince</strong><br>
-            <small>Emprunté le : 5 Février 2025</small><br>
-            <small class="retard">Date de retour : 15 Février 2025 (Retard)</small>
-        </div>
-        <div class="card">
-            <strong>📖 les frasques d ebintou</strong><br>
-            <small>Emprunté le : 10 Février 2025</small><br>
-            <small>Date de retour : 20 Février 2025</small>
-        </div>
+    
+    <style>
 
+      .tweet-button{
+        width: 65px;
+        height: 35px;
+        border: 2px solid black;
+        border-radius:20px;
+        border:none;
+        background-color: blue;
+        color:white;
+      }
 
+      .tweet-button:hover{
+        background-color:black;
 
-        <button class="btn-back" onclick="goBack()">Retour</button>
-    </div>
+      }
+      .tweet-button:active{
+        opacity: 0,7;
+      }
 
-    <!-- PAGE ADMINISTRATEUR -->
-    <div id="admin-page" class="container hidden">
-        <h1>Gestion des Emprunts</h1>
-        <div class="card">
-            <strong>👤 Alice</strong><br>
-            📖 Harry Potter<br>
-            <small>Emprunté le : 8 Février 2025</small><br>
-            <small>Date de retour : 18 Février 2025</small>
-        </div>
-        <div class="card">
-            <strong>👤 Bob</strong><br>
-            📖 Le Seigneur des Anneaux<br>
-            <small>Emprunté le : 1 Février 2025</small><br>  
-            <small class="retard">Date de retour : 10 Février 2025 (Retard)</small>
-        </div>
+      .join-button{
+        background-color: white;
+        width: 65px;
+        height: 35px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        color:blue;
+        border-color: blue;
 
-        <div class="card">
-            <strong>👤 RAZAK</strong><br>
-            📖 Le Seigneur des Anneaux<br>
-            <small>Emprunté le : 1 Février 2025</small><br>
-            <small class="retard">Date de retour : 10 Février 2025 (Retard)</small>
-        </div>
+      }
+       
+      .join-button:hover{
+        background-color: red;
+      }
 
-        <button class="btn-back" onclick="goBack()">Retour</button>
-    </div>
+      
 
-    <script>
-        function showUserPage() {
-            document.getElementById("login-page").classList.add("hidden");
-            document.getElementById("user-page").classList.remove("hidden");
-        }
+      .subscribe-button{
+        background-color: rgb(200, 0, 0);
+        width: 100px;
+        height: 35px;
+        border-radius:5px;
+        margin-right: 10px;
+        color:white;
+        border: none;
+       
 
-        function showAdminPage() {
-            document.getElementById("login-page").classList.add("hidden");
-            document.getElementById("admin-page").classList.remove("hidden");
-        }
+      }
 
-        function goBack() {
-            document.getElementById("user-page").classList.add("hidden");
-            document.getElementById("admin-page").classList.add("hidden");
-            document.getElementById("login-page").classList.remove("hidden");
-        }
-    </script>
+      .subscribe-button:hover{
+        background-color: antiquewhite;
+      }
+      .subscribe-button:active{
+              
+        opacity:0,7;
+
+      }
+    
+      </style>
+      
+     
 
 </body>
 </html>

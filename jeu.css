@@ -1,0 +1,35 @@
+header{
+    border: 1px blue solid ;
+    background-color: aqua;
+    
+    display: flex;
+    justify-content:space-between;
+}   
+
+    ul{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    img{
+        height: 40px;
+    }
+
+    li{
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .my-button{
+        height: 35px;
+    }
+.logo{
+    height: 35px;
+    width: 70px;
+    margin: r;
+}
